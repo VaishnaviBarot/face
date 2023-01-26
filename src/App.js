@@ -10,12 +10,12 @@ import Login from "./Components/Login";
 export default function App() {
   return (
     <AuthProvider>
-    <BrowserRouter>
-      <Routes>
-      <Route exact path="/" element = {<Home/>}/>
-      <Route exact path="/login" element = {<Login/>} />
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/login" element={<Login />} />
+        </Routes>
+      </BrowserRouter>
     </AuthProvider>
   );
 }

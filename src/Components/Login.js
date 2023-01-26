@@ -25,55 +25,19 @@ const Login = () => {
   };
 
   return (
-
-
-    // <form onSubmit={handleSubmit} className='container'>
-    //   <label>
-    //     Username:
-    //     <input className='m-3'
-    //       type="text"
-    //       value={username}
-    //       onChange={e => setUsername(e.target.value)}
-    //     />
-    //   </label>
-    //   <br />
-    //   <label>
-    //     Password:
-    //     <input
-    //       type="password"
-    //       value={password}
-    //       onChange={e => setPassword(e.target.value)}
-    //     />
-    //   </label>
-    //   <br />
-    //   <button type="submit">Log in</button>
-    //   {error && <p style={{ color: 'red' }}>{error}</p>}
-    // </form>
     <form onSubmit={handleSubmit} className='container p-3'>
-    <div className="form-group">
-      <label for="exampleInputEmail1">Username</label>
-      <input type="text" className="form-control" id="exampleInputEmail1" value={username} aria-describedby="emailHelp" onChange={e => setUsername(e.target.value)}/>
-      
-    </div>
-    <div className="form-group my-3">
-      <label for="exampleInputPassword1">Password</label>
-      <input type="password" className="form-control" id="exampleInputPassword1"  value={password} onChange={e => setPassword(e.target.value)} />
-    </div>
-    <button type="submit" className="btn btn-primary">Log in</button>
-    {error && <p style={{ color: 'red' }}>{error}</p>}
-  </form>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+      <div className="form-group">
+        <label for="exampleInputEmail1">Username</label>
+        <input type="text" className="form-control" id="exampleInputEmail1" value={username} aria-describedby="emailHelp" onChange={e => setUsername(e.target.value)} />
+
+      </div>
+      <div className="form-group my-3">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" className="form-control" id="exampleInputPassword1" value={password} onChange={e => setPassword(e.target.value)} />
+      </div>
+      <button type="submit" className="btn btn-primary">Log in</button>
+      {error && <p style={{ color: 'red' }}>{error}</p>}
+    </form>
   );
 };
 
