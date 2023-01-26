@@ -13,7 +13,7 @@ const Login = () => {
   const handleSubmit = e => {
     e.preventDefault();
 
-    if (username === 'foo' && password === 'pass') {
+    if (username === 'foo' && password === 'bar') {
       // Successful login
       login();
       history('/');
